@@ -3,6 +3,7 @@ import CategorySection from "./sections/CategorySection";
 import NewSection from "./sections/NewSection";
 import { ContentProvider } from "./context/ContentContext";
 import "./App.scss";
+import ContactSection from "./sections/ContactSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <HeroSection />
         <CategorySection />
         <NewSection />
+        <ContactSection />
       </ContentProvider>
     </>
   );

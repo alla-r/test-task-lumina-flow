@@ -6,7 +6,6 @@ import "./HeroSection.scss";
 function HeroSection() {
   const { heroContent } = useContent();
   const { title, description, button, image } = heroContent;
-  console.log(heroContent);
 
   return (
     <section className="hero">
@@ -28,7 +27,7 @@ function HeroSection() {
           <div className="hero__content">
             <h1 className="hero__title">{title}</h1>
             <p className="hero__text">{description}</p>
-            <Button text={button} type="hero" />
+            <Button text={button} styleType="hero" />
           </div>
         </div>
       </div>

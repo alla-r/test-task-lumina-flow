@@ -1,0 +1,111 @@
+@use "../../styles/variables";
+
+.contact {
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(to bottom, #f1f1f1 70%, #dbdbdb 70%);
+  overflow: hidden;
+
+  &__form {
+    margin: 0 auto;
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  &__image-wrapper {
+    margin: 0 auto;
+    width: 243px;
+    height: 345px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 37.5em) {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 3rem;
+    gap: 3rem;
+    background: linear-gradient(to right, #f1f1f1 70%, #dbdbdb 70%);
+
+    &__form {
+      // flex: 2;
+      margin: 0;
+      width: 437px;
+      gap: 0.5rem;
+    }
+
+    &__button {
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+
+    &__image-wrapper {
+      margin: 0;
+      width: 302px;
+      height: 429px;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .contact {
+    padding: 5rem 3rem;
+    gap: 3rem;
+    background: linear-gradient(to right, #f1f1f1 70%, #dbdbdb 70%);
+
+    &__form {
+      width: 561px;
+      gap: 0.55rem;
+    }
+
+    &__button {
+      margin-top: 2.2rem;
+      margin-bottom: 0;
+    }
+
+    &__image-wrapper {
+      width: 439px;
+      height: 624px;
+    }
+  }
+}
+
+/* Extra large */
+@media (min-width: 87.5em) {
+  .contact {
+    gap: 13.5rem;
+    padding: 7.5rem 9rem;
+
+    &__form {
+      width: 617px;
+      gap: 1.5rem;
+    }
+
+    &__button {
+      margin-top: 4rem;
+    }
+
+    &__image-wrapper {
+      margin: 0 auto;
+      width: 657px;
+      height: 934px;
+    }
+  }
+}

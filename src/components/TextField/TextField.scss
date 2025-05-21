@@ -1,0 +1,63 @@
+@use "../../styles/variables";
+
+.text-field {
+  border: 5px solid variables.$primary-color;
+  border-radius: 10px;
+  width: 100%;
+  height: 81px;
+  background-color: transparent;
+
+  &--big {
+    height: 130px;
+  }
+
+  &::placeholder {
+    font-size: 15px;
+    font-family: variables.$font-main;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 37.5em) {
+  .text-field {
+    height: 63px;
+
+    &--big {
+      height: 101px;
+    }
+
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .text-field {
+    height: 81px;
+
+    &--big {
+      height: 130px;
+    }
+  }
+}
+
+/* Extra large */
+@media (min-width: 87.5em) {
+  .text-field {
+    height: 121px;
+
+    &--big {
+      height: 194px;
+    }
+
+    &::placeholder {
+      font-size: 36px;
+    }
+  }
+}

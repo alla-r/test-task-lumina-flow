@@ -12,24 +12,31 @@
 
   &--bold {
     font-weight: 700;
-    margin: 2rem;
+    text-align: left;
   }
 }
 
 /* Tablet */
 @media (min-width: 37.5em) {
   .heading {
-    width: 311px;
-    margin: 0 auto;
+    max-width: 311px;
     font-size: 32px;
-    margin-top: 3.75rem;
+
+    &--normal {
+      margin: 0 auto;
+      margin-top: 3.75rem;
+    }
   }
 }
 
 /* Desktop */
 @media (min-width: 64em) {
   .heading {
-    width: 100%;
+    max-width: 100%;
+
+    &--bold {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -37,6 +44,9 @@
 @media (min-width: 87.5em) {
   .heading {
     font-size: 48px;
-    margin-top: 5rem;
+
+    &--normal {
+      margin-top: 5rem;
+    }
   }
 }

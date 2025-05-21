@@ -1,13 +1,17 @@
 import "./Button.scss";
 
-function Button({ text, type }) {
-  const btnTypes = ["hero", "outline", "filled"];
+function Button({ text, type, styleType, className }) {
+  const btnStyleTypes = ["hero", "outline", "filled"];
 
-  if (btnTypes.indexOf(type) === -1) {
-    throw new Error(`Button type shoud be one of ${btnTypes.join(", ")}`);
+  if (btnStyleTypes.indexOf(styleType) === -1) {
+    throw new Error(`Button type shoud be one of ${btnStyleTypes.join(", ")}`);
   }
 
-  return <button className={`button button--${type}`}>{text}</button>;
+  return (
+    <button className={`button button--${styleType} ${className}`} type={type}>
+      {text}
+    </button>
+  );
 }
 
 export default Button;
