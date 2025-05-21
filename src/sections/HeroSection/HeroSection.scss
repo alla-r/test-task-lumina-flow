@@ -1,7 +1,6 @@
 @use "../../styles/variables";
 
 .hero {
-  // min-height: 100vh;
   width: 100vw;
   padding-bottom: 5rem;
   background-color: #faf9f8;
@@ -14,7 +13,6 @@
   &__content-wrapper {
     position: relative;
     max-width: 94%;
-    // height: calc(100vh - 60px);
     margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
@@ -57,7 +55,7 @@
 /* Tablet */
 @media (min-width: 37.5em) {
   .hero {
-    min-height: 100vh;
+    padding-bottom: 8rem;
     width: 100vw;
     background-color: #faf9f8;
 
@@ -68,7 +66,6 @@
     &__content-wrapper {
       max-width: 866px;
       width: 92%;
-      height: calc(100vh - 150px);
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
@@ -111,6 +108,9 @@
 /* Desktop */
 @media (min-width: 64em) {
   .hero {
+    min-height: 100vh;
+    padding-bottom: 0;
+
     &__header {
       height: 180px;
     }

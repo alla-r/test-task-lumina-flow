@@ -12,7 +12,8 @@
 
   &--bold {
     font-weight: 700;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }
 
@@ -25,6 +26,11 @@
     &--normal {
       margin: 0 auto;
       margin-top: 3.75rem;
+    }
+
+    &--bold {
+      text-align: left;
+      margin-bottom: 1.75rem;
     }
   }
 }
