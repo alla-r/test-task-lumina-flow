@@ -1,9 +1,13 @@
+import HeroSection from "./sections/HeroSection";
+import { ContentProvider } from "./context/ContentContext";
 import "./App.scss";
 
 function App() {
   return (
     <>
-      <div>Hello world</div>
+      <ContentProvider>
+        <HeroSection />
+      </ContentProvider>
     </>
   );
 }
