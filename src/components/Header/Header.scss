@@ -1,6 +1,103 @@
-.hero__header {
+.header {
   width: 100%;
   height: inherit;
-  background-color: red;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 2rem;
+  position: relative;
+
+  &__logo {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__menu {
+    padding: 1rem 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #faf9f8;
+    width: 100%;
+    text-align: center;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin-bottom: 1.25rem;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &--open {
+      display: flex;
+      z-index: 10000;
+    }
+  }
+
+  &__burger-wrapper {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Tablet */
+@media (min-width: 46em) {
+  .header {
+    padding: 0;
+    width: 92%;
+    max-width: 866px;
+    margin: 0 auto;
+
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      position: static;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        li {
+          margin-bottom: 0;
+
+          &:hover {
+            opacity: 50%;
+          }
+        }
+      }
+    }
+
+    &__burger-wrapper {
+      display: none;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .header {
+    max-width: 1069px;
+  }
+}
+
+/* Extra large */
+@media (min-width: 87.5em) {
+  .header {
+    max-width: 1620px;
+    font-size: 2.25rem;
+  }
 }

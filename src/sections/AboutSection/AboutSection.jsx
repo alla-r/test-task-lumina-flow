@@ -29,7 +29,7 @@ function AboutSection() {
       </MobileView>
 
       <BrowserView>
-        <section className="about">
+        <section id="about" className="about">
           <div className="about__image-wrapper">
             <img src={image} alt="About image" className="about__image" />
           </div>

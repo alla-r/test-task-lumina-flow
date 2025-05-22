@@ -19,7 +19,7 @@ function NewSection() {
   });
 
   return (
-    <section className="new">
+    <section id="new" className="new">
       <SectionHeading text={title} type="normal" />
 
       <div className="new__content">

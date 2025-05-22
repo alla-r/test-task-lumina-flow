@@ -15,11 +15,13 @@ import NewImage3 from "../assets/images/new-desktop-3.png";
 
 import AboutImage from "../assets/images/about-desktop-1.png";
 import ContactImage from "../assets/images/contact-desktop-1.png";
+import MenuBurgerImage from "../assets/images/menu-burger.png";
 
 export const INITIAL_CONTENT = {
   headerContent: {
     logo: "ALTANSCHOOL WEB COURSES",
     items: ["HOME", "ABOUT", "SHOP", "BLOG", "CONTACT"],
+    image: MenuBurgerImage,
   },
   heroContent: {
     title: "ORGANIC FASHION",

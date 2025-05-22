@@ -18,6 +18,7 @@ The application was built with [Vite](https://vitejs.dev/).
 - [Vite](https://vitejs.dev/) - FE build tool
 - [ESlint](https://eslint.org/) - static code analysis tool for identifying problematic patterns found in JS code
 - [Prettier](https://prettier.io/) - code formatter
+- [SCSS](https://sass-lang.com/) - styles
 
 ## Installation
 

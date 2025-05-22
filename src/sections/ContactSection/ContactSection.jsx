@@ -20,7 +20,7 @@ function ContactSection() {
   });
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <form className="contact__form">
         <SectionHeading text={title} type="bold" />
         {items}

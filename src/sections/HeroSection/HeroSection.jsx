@@ -8,7 +8,7 @@ function HeroSection() {
   const { title, description, button, image } = heroContent;
 
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="wrapper">
         <Header className="hero__header" />
         <div className="hero__content-wrapper">

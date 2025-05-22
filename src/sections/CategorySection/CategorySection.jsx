@@ -19,7 +19,7 @@ function CategorySection() {
   });
 
   return (
-    <section className="category">
+    <section id="category" className="category">
       <SectionHeading text={title} type="normal" />
 
       <div className="category__content-1">{items}</div>
