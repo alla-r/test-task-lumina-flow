@@ -2,7 +2,7 @@
 
 ## Demo link
 
-TODO
+[Live version here](https://alla-r.github.io/test-task-lumina-flow/)
 
 ## Table of contents
 

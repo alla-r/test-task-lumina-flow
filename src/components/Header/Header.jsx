@@ -13,7 +13,7 @@ function Header({ className }) {
 
   return (
     <header className={`header ${className}`}>
-      <a href="/" className="header__logo">
+      <a href="#" className="header__logo">
         {logo}
       </a>
 

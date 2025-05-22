@@ -1,4 +1,4 @@
-import { MobileView, BrowserView } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import { useContent } from "../../context/ContentContext";
 import SectionHeading from "../../components/SectionHeading";
 import "./AboutSection.scss";
@@ -10,8 +10,8 @@ function AboutSection() {
 
   return (
     <>
-      <MobileView>
-        <section className="about">
+      {isMobileOnly ? (
+        <section id="about" className="about">
           <div className="about__content">
             <SectionHeading text={title} type="bold" />
             <p className="about__text">{description[0]}</p>
@@ -26,9 +26,7 @@ function AboutSection() {
             />
           </div>
         </section>
-      </MobileView>
-
-      <BrowserView>
+      ) : (
         <section id="about" className="about">
           <div className="about__image-wrapper">
             <img src={image} alt="About image" className="about__image" />
@@ -50,7 +48,7 @@ function AboutSection() {
             />
           </div>
         </section>
-      </BrowserView>
+      )}
     </>
   );
 }

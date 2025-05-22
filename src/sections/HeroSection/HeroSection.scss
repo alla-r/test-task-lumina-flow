@@ -112,12 +112,12 @@
     padding-bottom: 0;
 
     &__header {
-      height: 180px;
+      height: 140px;
     }
 
     &__content-wrapper {
       max-width: 1069px;
-      height: calc(100vh - 180px);
+      height: calc(100vh - 140px);
       gap: 6rem;
     }
 
