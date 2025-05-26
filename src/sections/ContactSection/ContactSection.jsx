@@ -20,16 +20,21 @@ function ContactSection() {
 
   return (
     <section id="contact" className="contact">
-      <form className="contact__form">
-        <SectionHeading text={title} type="bold" />
-        {items}
-        <button type="submit" className="contact__button button button--filled">
-          {button}
-        </button>
-      </form>
+      <div className="container">
+        <form className="contact__form">
+          <SectionHeading text={title} type="bold" />
+          {items}
+          <button
+            type="submit"
+            className="contact__button button button--filled"
+          >
+            {button}
+          </button>
+        </form>
 
-      <div className="contact__image-wrapper">
-        <img src={image} alt="Contact image" className="contact__image" />
+        <div className="contact__image-wrapper">
+          <img src={image} alt="Contact image" className="contact__image" />
+        </div>
       </div>
     </section>
   );

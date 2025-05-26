@@ -1,10 +1,13 @@
 @use "../../styles/variables";
 
 .contact {
-  padding-top: 1rem;
-  padding-bottom: 6rem;
   background: linear-gradient(to bottom, #f1f1f1 70%, #dbdbdb 70%);
   overflow: hidden;
+
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+  }
 
   &__form {
     margin: 0 auto;
@@ -36,15 +39,19 @@
 /* Tablet */
 @media (min-width: 37.5em) {
   .contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5rem 3rem;
-    gap: 3rem;
     background: linear-gradient(to right, #f1f1f1 70%, #dbdbdb 70%);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3rem;
+      padding: 5.5rem 2rem 6rem;
+    }
 
     &__form {
       margin: 0;
+      // width: 100%;
       width: 437px;
       gap: 0.5rem;
     }
@@ -65,9 +72,13 @@
 /* Desktop */
 @media (min-width: 64em) {
   .contact {
-    padding: 5rem 3rem;
+    // padding: 5rem 3rem;
     gap: 3rem;
     background: linear-gradient(to right, #f1f1f1 70%, #dbdbdb 70%);
+
+    .container {
+      padding: 6rem 0rem 8rem 1rem;
+    }
 
     &__form {
       width: 561px;
@@ -90,7 +101,10 @@
 @media (min-width: 87.5em) {
   .contact {
     gap: 13.5rem;
-    padding: 7.5rem 9rem;
+
+    .container {
+      padding: 6rem 0rem 9rem 7.5rem;
+    }
 
     &__form {
       width: 617px;

@@ -11,36 +11,40 @@ function AboutSection() {
     <>
       {isMobileOnly ? (
         <section id="about" className="about">
-          <div className="about__content">
-            <SectionHeading text={title} type="bold" />
-            <p className="about__text">{description[0]}</p>
-            <div className="about__image-wrapper">
-              <img src={image} alt="About image" className="about__image" />
+          <div className="container">
+            <div className="about__content">
+              <SectionHeading text={title} type="bold" />
+              <p className="about__text">{description[0]}</p>
+              <div className="about__image-wrapper">
+                <img src={image} alt="About image" className="about__image" />
+              </div>
+              <p className="about__text">{description[1]}</p>
+              <a href="#" className="button button--outline about__button">
+                {button}
+              </a>
             </div>
-            <p className="about__text">{description[1]}</p>
-            <a href="#" className="button button--outline about__button">
-              {button}
-            </a>
           </div>
         </section>
       ) : (
         <section id="about" className="about">
-          <div className="about__image-wrapper">
-            <img src={image} alt="About image" className="about__image" />
-          </div>
+          <div className="container">
+            <div className="about__image-wrapper">
+              <img src={image} alt="About image" className="about__image" />
+            </div>
 
-          <div className="about__content">
-            <SectionHeading text={title} type="bold" />
-            {description.map((text, i) => {
-              return (
-                <p key={i} className="about__text">
-                  {text}
-                </p>
-              );
-            })}
-            <a href="#" className="button button--outline about__button">
-              {button}
-            </a>
+            <div className="about__content">
+              <SectionHeading text={title} type="bold" />
+              {description.map((text, i) => {
+                return (
+                  <p key={i} className="about__text">
+                    {text}
+                  </p>
+                );
+              })}
+              <a href="#" className="button button--outline about__button">
+                {button}
+              </a>
+            </div>
           </div>
         </section>
       )}

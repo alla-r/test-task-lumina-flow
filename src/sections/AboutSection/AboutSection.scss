@@ -38,13 +38,17 @@
     text-align: left;
     margin: 0;
     max-width: none;
-    padding-top: 4.25rem;
-    padding-bottom: 2.875rem;
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      padding-top: 4.25rem;
+      padding-bottom: 2.875rem;
+      padding-left: 0.5rem;
+    }
 
     &__image-wrapper {
       margin: 0;
@@ -79,9 +83,12 @@
 @media (min-width: 64em) {
   .about {
     align-items: flex-start;
-    padding-top: 6.5rem;
-    padding-bottom: 8rem;
-    gap: 5.8rem;
+
+    .container {
+      padding-top: 6.5rem;
+      padding-bottom: 8rem;
+      gap: 5.8rem;
+    }
 
     &__image-wrapper {
       width: 316px;
@@ -105,6 +112,11 @@
     max-width: 1700px;
     justify-content: space-between;
     gap: 8rem;
+
+    .container {
+      padding: 0;
+      gap: 8rem;
+    }
 
     &__image-wrapper {
       flex-shrink: 0;

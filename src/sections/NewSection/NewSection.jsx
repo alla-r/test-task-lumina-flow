@@ -20,12 +20,14 @@ function NewSection() {
 
   return (
     <section id="new" className="new">
-      <SectionHeading text={title} type="normal" />
+      <div className="container">
+        <SectionHeading text={title} type="normal" />
 
-      <div className="new__content">
-        <div className="new__image-row">{items}</div>
+        <div className="new__content">
+          <div className="new__image-row">{items}</div>
 
-        <p className="new__text">{description}</p>
+          <p className="new__text">{description}</p>
+        </div>
       </div>
     </section>
   );
