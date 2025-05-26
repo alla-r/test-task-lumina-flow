@@ -1,14 +1,21 @@
 .header {
+  position: fixed;
   width: 100%;
   height: inherit;
   font-size: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem 0 1rem;
   position: relative;
+  background-color: #faf9f8;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: clamp(5rem, 0.5rem + 10vh, 14rem);
+  }
 
   &__logo {
+    padding-left: 0.9rem;
+    font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
     color: #000;
@@ -56,11 +63,17 @@
 @media (min-width: 46em) {
   .header {
     padding: 0;
-    width: 92%;
-    max-width: 866px;
-    margin: 0 auto;
+
+    .container {
+      align-items: flex-end;
+    }
+
+    &__logo {
+      padding-left: 0;
+    }
 
     &__menu {
+      padding: 0;
       display: flex;
       flex-direction: row;
       width: auto;
@@ -90,14 +103,17 @@
 /* Desktop */
 @media (min-width: 64em) {
   .header {
-    max-width: 1069px;
+    font-size: 1rem;
   }
 }
 
 /* Extra large */
 @media (min-width: 87.5em) {
   .header {
-    max-width: 1620px;
-    font-size: 2.25rem;
+    font-size: clamp(1rem, 0.5rem + 1vw, 2.25rem);
+
+    &__logo {
+      font-size: clamp(1rem, 0.5rem + 1vw, 2.25rem);
+    }
   }
 }

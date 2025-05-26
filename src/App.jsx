@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import HeroSection from "./sections/HeroSection";
 import CategorySection from "./sections/CategorySection";
 import NewSection from "./sections/NewSection";
@@ -10,11 +11,14 @@ function App() {
   return (
     <>
       <ContentProvider>
-        <HeroSection />
-        <CategorySection />
-        <NewSection />
-        <AboutSection />
-        <ContactSection />
+        <Header />
+        <main>
+          <HeroSection />
+          <CategorySection />
+          <NewSection />
+          <AboutSection />
+          <ContactSection />
+        </main>
       </ContentProvider>
     </>
   );

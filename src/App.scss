@@ -25,6 +25,34 @@ button {
   outline: none;
 }
 
+.container {
+  max-width: calc(100vw - 1.875rem);
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 37.5em) {
+  .container {
+    width: 92%;
+    max-width: 53.975rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .container {
+    max-width: 66.8125rem;
+  }
+}
+
+/* Extra large */
+@media (min-width: 87.5em) {
+  .container {
+    max-width: 101.1875rem;
+  }
+}
+
+/* Button componnet */
 .button {
   text-transform: uppercase;
   display: inline-block;

@@ -8,8 +8,7 @@ function HeroSection() {
 
   return (
     <section id="hero" className="hero">
-      <div className="wrapper">
-        <Header className="hero__header" />
+      <div className="container">
         <div className="hero__content-wrapper">
           <div className="hero__image-wrapper">
             <picture>
@@ -24,7 +23,7 @@ function HeroSection() {
             </picture>
           </div>
           <div className="hero__content">
-            <h1 className="hero__title">{title}</h1>
+            <h2 className="hero__title">{title}</h2>
             <p className="hero__text">{description}</p>
             <a href="#" className="button button--hero">
               {button}
