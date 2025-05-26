@@ -11,18 +11,18 @@
     padding-bottom: 60px;
     max-width: 298px;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 400;
     letter-spacing: 0.15em;
   }
 
   &__content {
-    margin-top: 2rem;
+    margin-top: clamp(2rem, 3vw, 3rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.25rem;
+    gap: clamp(0.25rem, 3vw, 2rem);
   }
 
   .container {
@@ -66,12 +66,11 @@
       padding-bottom: 70px;
       max-width: 747px;
       width: 92%;
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     &__content {
-      margin-top: 3rem;
-      gap: 2rem;
+      margin-top: clamp(3rem, 5vw, 6.5rem);
     }
 
     &__image-row {
@@ -97,11 +96,6 @@
       max-width: 967px;
     }
 
-    &__content {
-      margin-top: 6.5rem;
-      gap: 2rem;
-    }
-
     &__image-row {
       gap: 4.4rem;
     }
@@ -121,12 +115,7 @@
     &__text {
       padding-bottom: 133px;
       max-width: 1246px;
-      font-size: 40px;
-    }
-
-    &__content {
-      margin-top: 6.5rem;
-      gap: 2rem;
+      font-size: 2.5rem;
     }
 
     &__image-row {

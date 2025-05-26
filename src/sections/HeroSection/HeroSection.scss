@@ -22,7 +22,7 @@
   }
 
   &__text {
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5rem + 3vw, 1.25rem);
     width: 50%;
     padding-left: 0.9rem;
   }
@@ -75,7 +75,6 @@
 
     &__text {
       width: 100%;
-      font-size: 20px;
       padding-left: 0;
       margin-bottom: 1rem;
     }
@@ -130,12 +129,11 @@
 @media (min-width: 87.5em) {
   .hero {
     &__content {
-      // gap: 2rem;
       max-width: 918px;
     }
 
     &__text {
-      font-size: 2rem;
+      font-size: clamp(1.25rem, 0.5rem + 3vw, 2rem);
     }
 
     &__title {

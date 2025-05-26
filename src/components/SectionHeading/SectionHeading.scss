@@ -2,18 +2,18 @@
 
 .heading {
   text-align: center;
-  font-size: 20px;
+  font-size: clamp(1.25rem, 0.5rem + 3vw, 2rem);
   letter-spacing: 0.15em;
 
   &--normal {
     font-weight: 400;
-    margin: 1.5rem;
+    margin-top: clamp(1.5rem, 5vw, 3.75rem);
   }
 
   &--bold {
     font-weight: 700;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: clamp(1rem, 3vw, 1.75rem);
   }
 }
 
@@ -21,16 +21,16 @@
 @media (min-width: 37.5em) {
   .heading {
     max-width: 311px;
-    font-size: 32px;
+    font-size: clamp(2rem, 0.5rem + 3vw, 3rem);
 
     &--normal {
       margin: 0 auto;
-      margin-top: 3.75rem;
+      margin-top: clamp(3.75rem, 5vw, 5rem);
     }
 
     &--bold {
       text-align: left;
-      margin-bottom: 1.75rem;
+      margin-bottom: clamp(1.75rem, 3vw, 2rem);
     }
   }
 }
@@ -39,20 +39,9 @@
 @media (min-width: 64em) {
   .heading {
     max-width: 100%;
-
-    &--bold {
-      margin-bottom: 2rem;
-    }
   }
 }
 
 /* Extra large */
 @media (min-width: 87.5em) {
-  .heading {
-    font-size: 48px;
-
-    &--normal {
-      margin-top: 5rem;
-    }
-  }
 }

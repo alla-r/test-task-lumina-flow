@@ -27,7 +27,7 @@
   }
 
   &__text {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
   }
 }
@@ -44,17 +44,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2.5rem;
-      padding-top: 4.25rem;
-      padding-bottom: 2.875rem;
+      gap: clamp(2.5rem, 8vw, 5.8rem);
+      padding-top: clamp(4.25rem, 11vw, 6.5rem);
+      padding-bottom: clamp(2.875rem, 14vw, 8rem);
       padding-left: 0.5rem;
     }
 
     &__image-wrapper {
       margin: 0;
       flex-shrink: 0;
-      width: 251px;
-      height: 508px;
+      width: clamp(251px, 35vw, 473px);
+      height: clamp(508px, 68vw, 938px);
     }
 
     &__image {
@@ -65,15 +65,15 @@
     }
 
     &__content {
-      max-width: 561px;
+      max-width: clamp(561px, 50vw, 724px);
     }
 
     &__button {
-      margin-top: 2rem;
+      margin-top: clamp(2rem, 4vw, 4rem);
     }
 
     &__text {
-      font-size: 20px;
+      font-size: clamp(1.25rem, 0.25rem + 1.5vw, 2.25rem);
       margin-bottom: 1rem;
     }
   }
@@ -85,22 +85,15 @@
     align-items: flex-start;
 
     .container {
-      padding-top: 6.5rem;
-      padding-bottom: 8rem;
-      gap: 5.8rem;
+      gap: clamp(5.8rem, 9vw, 8rem);
     }
 
     &__image-wrapper {
-      width: 316px;
-      height: 626px;
+      flex-shrink: 0;
     }
 
     &__content {
-      max-width: 724px;
-    }
-
-    &__button {
-      margin-top: 3rem;
+      max-width: clamp(724px, 50vw, 1074px);
     }
   }
 }
@@ -108,32 +101,6 @@
 /* Extra large */
 @media (min-width: 87.5em) {
   .about {
-    margin: 8rem;
-    max-width: 1700px;
     justify-content: space-between;
-    gap: 8rem;
-
-    .container {
-      padding: 0;
-      gap: 8rem;
-    }
-
-    &__image-wrapper {
-      flex-shrink: 0;
-      width: 474px;
-      height: 938px;
-    }
-
-    &__content {
-      max-width: 1074px;
-    }
-
-    &__button {
-      margin-top: 4rem;
-    }
-
-    &__text {
-      font-size: 36px;
-    }
   }
 }

@@ -41,16 +41,12 @@ button {
 /* Desktop */
 @media (min-width: 64em) {
   .container {
-    // max-width: 66.8125rem;
     max-width: clamp(66.8125rem, 92%, 101.1875rem);
   }
 }
 
 /* Extra large */
 @media (min-width: 87.5em) {
-  // .container {
-  //   max-width: 101.1875rem;
-  // }
 }
 
 /* Button componnet */

@@ -12,7 +12,7 @@
   }
 
   &::placeholder {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-family: variables.$font-main;
     color: #000;
   }
@@ -25,14 +25,14 @@
 /* Tablet */
 @media (min-width: 37.5em) {
   .text-field {
-    height: 63px;
+    height: clamp(63px, 8vw, 81px);
 
     &--big {
-      height: 101px;
+      height: clamp(101px, 14vw, 130px);
     }
 
     &::placeholder {
-      font-size: 20px;
+      font-size: clamp(1.25rem, 0.5rem + 2vw, 2.25rem);
     }
   }
 }
@@ -40,25 +40,14 @@
 /* Desktop */
 @media (min-width: 64em) {
   .text-field {
-    height: 81px;
+    height: clamp(81px, 9vw, 121px);
 
     &--big {
-      height: 130px;
+      height: clamp(130px, 14vw, 194px);
     }
   }
 }
 
 /* Extra large */
 @media (min-width: 87.5em) {
-  .text-field {
-    height: 121px;
-
-    &--big {
-      height: 194px;
-    }
-
-    &::placeholder {
-      font-size: 36px;
-    }
-  }
 }
