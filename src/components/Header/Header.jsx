@@ -38,13 +38,13 @@ function Header({ className }) {
         </ul>
       </nav>
 
-      <div className="header__burger-wrapper" onClick={toggleMenu}>
+      <button className="header__burger-wrapper" onClick={toggleMenu}>
         <img
           src={image}
           alt="Burger image icon"
           className="header__burger-image"
         />
-      </div>
+      </button>
     </header>
   );
 }

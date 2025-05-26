@@ -2,7 +2,6 @@ import { isMobileOnly } from "react-device-detect";
 import { useContent } from "../../context/ContentContext";
 import SectionHeading from "../../components/SectionHeading";
 import "./AboutSection.scss";
-import Button from "../../components/Button";
 
 function AboutSection() {
   const { aboutContent } = useContent();
@@ -19,11 +18,9 @@ function AboutSection() {
               <img src={image} alt="About image" className="about__image" />
             </div>
             <p className="about__text">{description[1]}</p>
-            <Button
-              text={button}
-              styleType="outline"
-              className="about__button"
-            />
+            <a href="#" className="button button--outline about__button">
+              {button}
+            </a>
           </div>
         </section>
       ) : (
@@ -41,11 +38,9 @@ function AboutSection() {
                 </p>
               );
             })}
-            <Button
-              text={button}
-              styleType="outline"
-              className="about__button"
-            />
+            <a href="#" className="button button--outline about__button">
+              {button}
+            </a>
           </div>
         </section>
       )}

@@ -1,6 +1,5 @@
 import { useContent } from "../../context/ContentContext";
 import Header from "../../components/Header";
-import Button from "../../components/Button";
 import "./HeroSection.scss";
 
 function HeroSection() {
@@ -27,7 +26,9 @@ function HeroSection() {
           <div className="hero__content">
             <h1 className="hero__title">{title}</h1>
             <p className="hero__text">{description}</p>
-            <Button text={button} styleType="hero" />
+            <a href="#" className="button button--hero">
+              {button}
+            </a>
           </div>
         </div>
       </div>

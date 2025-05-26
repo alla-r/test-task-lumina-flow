@@ -2,7 +2,6 @@ import { useContent } from "../../context/ContentContext";
 import SectionHeading from "../../components/SectionHeading";
 import "./ContactSection.scss";
 import TextField from "../../components/TextField";
-import Button from "../../components/Button";
 
 function ContactSection() {
   const { contactContent } = useContent();
@@ -24,12 +23,9 @@ function ContactSection() {
       <form className="contact__form">
         <SectionHeading text={title} type="bold" />
         {items}
-        <Button
-          type="submit"
-          text={button}
-          styleType="filled"
-          className="contact__button"
-        />
+        <button type="submit" className="contact__button button button--filled">
+          {button}
+        </button>
       </form>
 
       <div className="contact__image-wrapper">

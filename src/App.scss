@@ -13,3 +13,107 @@
 html {
   font-size: 16px;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.button {
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 0.8125rem;
+  line-height: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  letter-spacing: 0.15em;
+  background-color: variables.$primary-color;
+  color: #fff;
+  cursor: pointer;
+  max-inline-size: max-content;
+
+  &--hero {
+    border-radius: 59px;
+    padding: 0.77em 2.4em;
+  }
+
+  &--filled {
+    max-inline-size: 100%;
+    padding: 1em 1.36em;
+  }
+
+  &--outline {
+    padding: 0.9em 1.36em;
+    background-color: transparent;
+    color: #000;
+    border: 5px solid variables.$primary-color;
+  }
+
+  &:hover {
+    opacity: 85%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 37.5em) {
+  .button {
+    font-size: 1.25rem;
+
+    &--hero {
+      padding: 0.5em 2.25em;
+    }
+
+    &--filled {
+      padding: 0.65em 1em;
+    }
+
+    &--outline {
+      padding: 0.5em 1.1em;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  .button {
+    &--hero {
+      padding: 0.95em 2.05em;
+    }
+
+    &--filled {
+      max-inline-size: max-content;
+      padding: 0.85em 2.9em;
+    }
+
+    &--outline {
+      padding: 1em 1.35em;
+    }
+  }
+}
+
+/* Extra large */
+@media (min-width: 87.5em) {
+  .button {
+    font-size: 2.25rem;
+
+    &--hero {
+      font-size: 1.25rem;
+      padding: 1.3em 4.2em;
+    }
+
+    &--filled {
+      padding: 0.71em 2.94em;
+    }
+
+    &--outline {
+      padding: 0.62em 1.11em;
+    }
+  }
+}
